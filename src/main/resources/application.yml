@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: SockShop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: oew
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8080
+
+logging:
+  #  level:
+  #    org.springframework.kafka: ERROR
+  #    com.currency.exchange.kafka: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %level - %logger{36} - %msg%n"
+
+swagger:
+  enabled: true
